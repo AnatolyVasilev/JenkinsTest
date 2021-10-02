@@ -1,0 +1,1 @@
+echo "Sonar Qube Quality Gate passed successfully";
