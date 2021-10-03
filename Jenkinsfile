@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Git-Checkout') {
-            steps {
-                echo "Checking out from Git Repo";
-                git branch: 'main', url: 'https://github.com/AnatolyVasilev/JenkinsTest.git'
-            }
-        }
+//         stage('Git-Checkout') {
+//             steps {
+//                 echo "Checking out from Git Repo";
+//                 git branch: 'main', url: 'https://github.com/AnatolyVasilev/JenkinsTest.git'
+//             }
+//         }
         stage('Build') {
             steps {
                 sh 'bash ./Build.sh'
